@@ -1,9 +1,13 @@
 
 import Product from "./components/Product"
 import Effect from "./components/Effect"
-
+import PreviousState from "./components/PreviousState"
 // import Parent from "./components/Parent"
-import "./App.css"
+import Form from "./components/form"
+// import "./App.css"
+import Todo from "./components/Todo"
+
+
 
 function App() {
   
@@ -36,7 +40,9 @@ function App() {
       </div> */}
 
         
-        <Effect />
+        {/* <PreviousState /> */}
+        {/* <Form /> */}
+        <Todo />
 
     </div>
    
