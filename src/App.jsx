@@ -12,6 +12,9 @@ import Useref from "./components/Useref"
  import Multiple from "./components/Multiple"
 // import Onchange from "./components/Onchange"
 import Input from "./components/input"
+import Redx from "./components/Usereducer"
+
+
 
 
 
@@ -48,7 +51,7 @@ function App() {
         
         {/* <PreviousState /> */}
         {/* <Form /> */}
-        {/* <Todo /> */}
+        <Todo />
 
         {/* <Usestate /> */}
         {/* <Useref /> */}
@@ -57,7 +60,9 @@ function App() {
         {/* <Multiple /> */}
           {/* <Onchange/> */}
 
-        <Input />
+        {/* <Input /> */}
+
+        {/* <Redx /> */}
     </div>
    
     
