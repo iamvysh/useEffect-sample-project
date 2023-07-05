@@ -13,12 +13,23 @@ import Useref from "./components/Useref"
 // import Onchange from "./components/Onchange"
 import Input from "./components/input"
 import Redx from "./components/Usereducer"
+import Authcontext from "./helpers/Authcontext"
+import Auth from "./components/Auth"
+import { useState } from "react"
+import Context from "./components/Context"
+import Doctititleone from "./components/customhook/Doctititleone"
 
 
 
 
 
 function App() {
+
+  // const[authstatus,setauthstatus]=useState(false)
+  // const login=()=>{
+
+  //   setauthstatus(true)
+  // }
   
 
   return (
@@ -51,7 +62,7 @@ function App() {
         
         {/* <PreviousState /> */}
         {/* <Form /> */}
-        <Todo />
+        {/* <Todo /> */}
 
         {/* <Usestate /> */}
         {/* <Useref /> */}
@@ -63,6 +74,17 @@ function App() {
         {/* <Input /> */}
 
         {/* <Redx /> */}
+
+{/* 
+        <Authcontext.Provider value={{status:authstatus,login:login}}>
+          <Auth />
+        </Authcontext.Provider> */}
+
+
+
+        {/* <Context /> */}
+
+        <Doctititleone/>
     </div>
    
     
