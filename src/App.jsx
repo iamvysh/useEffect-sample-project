@@ -1,90 +1,30 @@
+import "./App.css"
 
-import Product from "./components/Product"
-import Effect from "./components/Effect"
-import PreviousState from "./components/PreviousState"
-// import Parent from "./components/Parent"
-import Form from "./components/form"
-// import "./App.css"
-import Todo from "./components/Todo"
-import Usestate from "./components/Usestate"
-import Useref from "./components/Useref"
- import MyComponent from "./components/Useeffect"
- import Multiple from "./components/Multiple"
-// import Onchange from "./components/Onchange"
-import Input from "./components/input"
-import Redx from "./components/Usereducer"
-import Authcontext from "./helpers/Authcontext"
-import Auth from "./components/Auth"
-import { useState } from "react"
-import Context from "./components/Context"
-import Doctititleone from "./components/customhook/Doctititleone"
+import { Route,Routes,useNavigate } from "react-router-dom"
 
+import Registration from "./components/Router/Registration"
+import Login from "./components/Router/Login"
+import Home from "./components/Router/Home"
 
 
 
 
 function App() {
 
-  // const[authstatus,setauthstatus]=useState(false)
-  // const login=()=>{
-
-  //   setauthstatus(true)
-  // }
+  
   
 
   return (
     
     
     <div>
-       {/* <Parent  name="john kurisingal"/>  */}
-
-    {/* <div className="App">
-        {/* <Product
-          img="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933"
-          name="Cyxus"
-          desc="Non-Slip Fitness Leisure Running Sneakers"
-          price="$29"
-        /> */}
-        {/* <Product
-          img="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/01/241417/1.jpg?6747"
-          name="Vitike"
-          desc="Latest Men Sneakers -Black"
-          price="$100"
-        />
-        <Product
-          img="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/06/4410121/1.jpg?4437"
-          name="Aomei"
-          desc="Men's Trend Casual Sports Shoe"
-          price="$40"
-        /> */}
-      {/* </div> */} */
-
+      
+      <Routes>
+        <Route  path="/registration" element={<Registration />}    />
+        <Route  path="/login" element={<Login/>}    />
+        <Route  path="/"  element={<Home/>} />
+      </Routes>
         
-        {/* <PreviousState /> */}
-        {/* <Form /> */}
-        {/* <Todo /> */}
-
-        {/* <Usestate /> */}
-        {/* <Useref /> */}
-
-        {/* <MyComponent /> */}
-        {/* <Multiple /> */}
-          {/* <Onchange/> */}
-
-        {/* <Input /> */}
-
-        {/* <Redx /> */}
-
-{/* 
-        <Authcontext.Provider value={{status:authstatus,login:login}}>
-          <Auth />
-        </Authcontext.Provider> */}
-
-
-
-        {/* <Context /> */}
-
-        <Doctititleone/>
     </div>
    
     
